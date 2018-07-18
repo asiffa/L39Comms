@@ -1,29 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="medium-editor.css">
+    <link rel="stylesheet" href="flat.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-<meta charset="utf-8"/>
-
-
-<title>Newsletter</title>
-    
-    
-<script type="text/javascript">
-    
-</script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>L39 MailChimp Organiser</title>
 
 </head>
-
-
 <body>
+    <header class="body">
+    </header>
 
-<form action="email.php" method="POST">
-    Name: <input type="text" name="username"/><br><br>
-    Email: <input type="text" name="email_address"/><br><br>
-    Text: <textarea rows="20" cols="100" name="message" ></textarea><br><br>
-    Date: <input type="date" id="datepicker"><br><br>      
-    <input type="submit" value="Submit!"/>
-    
-    </form>
+    <section class="body">
+        <img src="https://i.imgur.com/G5k8Yjc.jpg" alt="L39 to MC" style="width: 150px; height: 105px;" class="center">
+
+
+        <form method="post" action="index.php">
+            <label>Week</label>
+            <input id="myWeek" name="date" type="week" value="2018-W28">
+
+            <label>Session Type</label>
+            <div class="dropdown">
+                <select id="type" name="type">
+                <option value="#Seminar39">Seminar39</option>
+                <option value="#OfficeHours39">#OfficeHours39</option>
+                <option value="Investor #OfficeHours39">Investor #OfficeHours39</option>
+                <option value="#Event39">#Event39</option>
+                <option value="#Opportunity39">#Opportunity39</option>
+
+                </select>
+            </div>
+
+            <label>Title</label>
+            <textarea name="headline" placeholder="Title Here"></textarea>
+
+            <label>Date + Location details</label>
+            <textarea name="details" placeholder="e.g. Tuesday 17th July 2018, 10:00-12:00, Space39, Level39"></textarea>
+
+
+
+            <label>Description</label>
+            <textarea class="editable" name="desc" placeholder="Description Here"></textarea>
+
+            <div class="buttons">
+                <input id="submit" name="submit" class="but" type="submit" value="Submit">
+                <input id="retrieve" name="retrieve" class="but" type="submit" value="Retrieve Week">
+                <input id="retrieveall" name="retrieveall" class="but" type="submit" value="Retrieve All">
+                <input id="create" name="create" class="but" type="submit" value="Create Week">
+
+            </div>
+        </form>
+    </section>
+
+    <footer class="body">
+        <script src="medium-editor.js"></script>
+        <script src="main.js"></script>
+        <script src="vanilla-color-picker.js">
+        </script>
+    </footer>
+
 
 </body>
+
+</html>

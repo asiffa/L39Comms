@@ -1,0 +1,117 @@
+label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.body {
+    /*    display: block;*/
+    margin: 0 auto;
+    width: 576px;
+    font-family: sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    width: 459px;
+}
+
+input,
+textarea {
+    width: 439px;
+    height: 27px;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: #3a3a3a;
+}
+
+input,
+textarea {
+    width: 439px;
+    height: 27px;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea[name='desc'] {
+    height: 200px;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #97d6eb;
+}
+
+.buttons {
+    padding-top: 50px;
+}
+
+.but {
+    width: 110px;
+    float: left;
+    margin-left: 4px;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#data th {
+    background-color: lightgray;
+    min-width: 140px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    vertical-align: bottom;
+}
+
+#data td {
+    padding-bottom: 40px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: left;
+
+}
+
+a {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+div.container1 {
+    height: 10em;
+    position: relative;
+}
+
+div.container1 a {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
